@@ -19,7 +19,7 @@ for SCRIPT in "${SCRIPTS[@]}"; do
     else
         echo "Error: $SCRIPT failed to execute." >> error_log.txt
         # You may choose to exit on error or continue
-        # exit 1  # Uncomment if you want to stop on the first error
+        exit 1  # Uncomment if you want to stop on the first error
     fi
 done
 psql DROP TABLE IF EXISTS plandata.tmp
