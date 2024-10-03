@@ -28,11 +28,8 @@ INSERT INTO plandata.komuneplan_for_adresse
 ``` sql
 DROP TABLE if EXISTS plandata.Zonekort_for_adresse;
 CREATE TABLE plandata.Zonekort_for_adresse as
-    SELECT a.adresse, l.doklink plandata_link, l.datoforsl forslået, l.datovedt vedtaget, l.datoaflyst aflyst, l.datoikraft i_kraft, l.datostart start, l.datoslut slut
+    SELECT a.adresse, a.adgangsadressebetegnelse, z.zone, z.zonestatus
     FROM plandata.address_only_buildings AS a
-    JOIN plandata.komuneplan_oversigt_vedtaget_uden_geometri_v AS k ON a.kommune = k.komnr;
-INSERT INTO plandata.Zonekort_for_adresse
-    SELECT a.adresse, k.doklink, false vedtaget
-    FROM plandata.address_only_buildings AS a
-    JOIN plandata.komuneplan_oversigt_forslag_uden_geometri_v AS k ON a.kommune = k.komnr;
+    JOIN plandata.theme_pdk_zonekort_v AS z ON a.kommune = z.komnr
+    WHERE st_isvalid(z.geometri) and st_within(a.koord_25832, z.geometri)
 ```
