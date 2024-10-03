@@ -1,3 +1,4 @@
+### Lokalplan
 ``` sql
 DROP TABLE IF EXISTS plandata.lokalplan_for_adresse;
 CREATE TABLE plandata.lokalplan_for_adresse as
@@ -11,6 +12,7 @@ INSERT INTO plandata.lokalplan_for_adresse
     JOIN plandata.address_only_buildings a on a.kommune = l.komnr
     WHERE st_isvalid(l.geometri) and st_within(a.koord_25832, l.geometri)
 ```
+### Komuneplan
 ``` sql
 DROP TABLE if EXISTS plandata.komuneplan_for_adresse;
 CREATE TABLE plandata.komuneplan_for_adresse as
@@ -18,6 +20,18 @@ CREATE TABLE plandata.komuneplan_for_adresse as
     FROM plandata.address_only_buildings AS a
     JOIN plandata.komuneplan_oversigt_vedtaget_uden_geometri_v AS k ON a.kommune = k.komnr;
 INSERT INTO plandata.komuneplan_for_adresse
+    SELECT a.adresse, k.doklink, false vedtaget
+    FROM plandata.address_only_buildings AS a
+    JOIN plandata.komuneplan_oversigt_forslag_uden_geometri_v AS k ON a.kommune = k.komnr;
+```
+### Zonekort
+``` sql
+DROP TABLE if EXISTS plandata.Zonekort_for_adresse;
+CREATE TABLE plandata.Zonekort_for_adresse as
+    SELECT a.adresse, l.doklink plandata_link, l.datoforsl forslået, l.datovedt vedtaget, l.datoaflyst aflyst, l.datoikraft i_kraft, l.datostart start, l.datoslut slut
+    FROM plandata.address_only_buildings AS a
+    JOIN plandata.komuneplan_oversigt_vedtaget_uden_geometri_v AS k ON a.kommune = k.komnr;
+INSERT INTO plandata.Zonekort_for_adresse
     SELECT a.adresse, k.doklink, false vedtaget
     FROM plandata.address_only_buildings AS a
     JOIN plandata.komuneplan_oversigt_forslag_uden_geometri_v AS k ON a.kommune = k.komnr;
