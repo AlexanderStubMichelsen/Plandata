@@ -27,7 +27,7 @@ echo "Fetching all records for layer: $SERVER_LAYER and loading into temporary t
 ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     --config OGR_WFS_URL "$URL" \
     --config OGR_WFS_BASEURL "$URL" \
-    -where datoopdt > $LAST_DOWNLOAD_TIMESTAMP\
+    -where "datoopdt > '$LAST_DOWNLOAD_TIMESTAMP'" \
     -nln "$TEMP_TABLE" \
     -lco SCHEMA=plandata \
     -skipFailures \
@@ -39,13 +39,14 @@ if [ $? -eq 0 ]; then
     echo "Successfully appended all records to the temporary table from $SERVER_LAYER"
 else
     echo "Warning: Failed to append records to the temporary table from $SERVER_LAYER" >> error_log.txt  # Log the error
+    exit 1
 fi
 
 # Reintroduce the SQL-based update to filter by timestamp
 echo "Updating existing records in $LOCAL_LAYER"
 psql -d crawler -c "UPDATE plandata.$LOCAL_LAYER 
     SET 
-        ogc_fid = source.ogc_fid,
+        ogc_fid = source.ogc_fid::Integer,
         gml_id = source.gml_id,
         oid_ = source.oid_,
         id = source.id,
@@ -340,4 +341,5 @@ if [ $? -eq 0 ]; then
     echo "Successfully updated existing records in $LOCAL_LAYER"
 else
     echo "Error updating existing records in $LOCAL_LAYER" >> error_log.txt  # Log the error
+    exit
 fi

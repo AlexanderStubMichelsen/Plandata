@@ -1,130 +1,34 @@
-Error updating theme_pdk_kommuneplan_oversigt_forslag_v
-Error updating theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error updating theme_pdk_lokalplan_forslag_v
-Error updating theme_pdk_lokalplan_vedtaget_v
-Error updating theme_pdk_zonekort_samlet_v
-Error updating theme_pdk_zonekort_v
-Error updating theme_pdk_lokalplan_vedtaget_v from pdk:theme_pdk_lokalplan_vedtaget_v
-Error updating theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error updating theme_pdk_zonekort_samlet_v from pdk:theme_pdk_zonekort_samlet_v
-Error updating theme_pdk_lokalplan_forslag_v from pdk:theme_pdk_lokalplan_forslag_v
-Error updating theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error updating theme_pdk_zonekort_v from pdk:theme_pdk_zonekort_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error updating existing records in theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error updating existing records in theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error updating existing records in theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to  from 
-Error updating existing records in 
-Error appending new records to  from 
-Error updating existing records in 
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to  from 
-Error updating existing records in 
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from "pdk:theme_pdk_kommuneplan_oversigt_forslag_v"
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from "pdk:theme_pdk_kommuneplan_oversigt_forslag_v"
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from "pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v"
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from "pdk:theme_pdk_kommuneplan_oversigt_forslag_v"
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from "pdk:theme_pdk_kommuneplan_oversigt_forslag_v"
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error updating existing records in theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error updating existing records in theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_lokalplan_vedtaget_v from pdk:theme_pdk_lokalplan_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_lokalplan_forslag_v from pdk:theme_pdk_lokalplan_forslag_v
-Error appending new records to theme_pdk_lokalplan_forslag_v from pdk:theme_pdk_lokalplan_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_lokalplan_forslag_v from pdk:theme_pdk_lokalplan_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_lokalplan_vedtaget_v from pdk:theme_pdk_lokalplan_vedtaget_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_forslag_v from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending new records to theme_pdk_kommuneplan_oversigt_vedtaget_v from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending new records to theme_pdk_lokalplan_forslag_v from pdk:theme_pdk_lokalplan_forslag_v
-Error appending new records to theme_pdk_lokalplan_vedtaget_v from pdk:theme_pdk_lokalplan_vedtaget_v
-Error appending new records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending all records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
-Error appending all records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error appending all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Error appending all records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
-Error appending all records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-Error appending all records to the temporary table from pdk:theme_pdk_zonekort_v
-OGR2OGR command failed with error code: 0
-Output: ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
+Warning 1: Renaming field 'oid' to 'oid_' to avoid conflict with internal oid field.
+ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
 HINT:  Must be superuser to create an event trigger.
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Error updating existing records in theme_pdk_zonekort_samlet_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Error updating existing records in theme_pdk_lokalplan_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
-Error updating existing records in theme_pdk_lokalplan_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
+
+Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
+Error: theme_pdk_kommuneplan_oversigt_forslag_v_update.sh failed to execute.
+Warning 1: Renaming field 'oid' to 'oid_' to avoid conflict with internal oid field.
+ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
+HINT:  Must be superuser to create an event trigger.
+
 Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Error updating existing records in theme_pdk_zonekort_samlet_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
+Error: theme_pdk_kommuneplan_oversigt_vedtaget_v_update.sh failed to execute.
+Warning 1: Renaming field 'oid' to 'oid_' to avoid conflict with internal oid field.
+ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
+HINT:  Must be superuser to create an event trigger.
+
 Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
+Error: theme_pdk_lokalplan_forslag_v_update.sh failed to execute.
+Warning 1: Renaming field 'oid' to 'oid_' to avoid conflict with internal oid field.
+ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
+HINT:  Must be superuser to create an event trigger.
+
 Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
+Error: theme_pdk_lokalplan_vedtaget_v_update.sh failed to execute.
+ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
+HINT:  Must be superuser to create an event trigger.
+
 Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
+Error: theme_pdk_zonekort_samlet_v_update.sh failed to execute.
+ERROR 1: ERROR:  permission denied to create event trigger "ogr_system_tables_event_trigger_for_metadata"
+HINT:  Must be superuser to create an event trigger.
+
 Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Error updating existing records in theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_forslag_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_lokalplan_vedtaget_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_samlet_v
-Warning: Failed to append records to the temporary table from pdk:theme_pdk_zonekort_v
+Error: theme_pdk_zonekort_v.sh failed to execute.
