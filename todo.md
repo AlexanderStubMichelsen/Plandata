@@ -9,5 +9,5 @@
 
 for hver addresse:
 - lokalplan vedtaget
-- lokallpan forslag
-- komunemplan oversigt
+- lokalplan forslag
+- kommunemplan oversigt

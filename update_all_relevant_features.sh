@@ -11,6 +11,9 @@ SCRIPTS=("theme_pdk_kommuneplan_oversigt_forslag_v_update.sh"
 # Clear error log at the start of the script
 > error_log.txt
 
+# Get the current timestamp before running any scripts
+START_TIME=$(date +"%Y-%m-%d %H:%M:%S")
+
 # Loop through each script and execute it
 for SCRIPT in "${SCRIPTS[@]}"; do
     echo "Running $SCRIPT..."
@@ -28,15 +31,6 @@ for SCRIPT in "${SCRIPTS[@]}"; do
     fi
 done
 
-# Drop the temp table
-psql -c "DROP TABLE IF EXISTS plandata.tmp" >> "script_output.log" 2>> "error_log.txt"
-if [ $? -eq 0 ]; then
-    echo "Temporary table dropped successfully."
-else
-    echo "Error: Failed to drop the temporary table." >> error_log.txt
-    exit 1  # Exit if psql command fails
-fi
-
-# Update the last download timestamp after all scripts have run
-date +"%Y-%m-%d %H:%M:%S" > last_download.txt
+# After all scripts have run, update the last download timestamp
+echo "$START_TIME" > last_download.txt
 echo "Last download timestamp updated."

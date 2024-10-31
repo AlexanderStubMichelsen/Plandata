@@ -23,3 +23,433 @@ Dropping temporary table if it exists...
 DROP TABLE
 Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
 DROP TABLE
+Using timestamp from last_download.txt: 2024-10-04 10:51:35
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-04 10:51:35
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-04 10:51:35
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-04 10:51:35
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-04 10:51:35
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-04 10:51:35
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:21:46
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:21:46
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:21:46
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:21:46
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:21:46
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:21:46
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:32:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:32:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:32:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:32:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:32:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:32:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:34:15
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:34:15
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:34:15
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:34:15
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:34:15
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:34:15
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:40:26
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:40:26
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:40:26
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:40:26
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:40:26
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:40:26
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:48:30
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:48:30
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:48:30
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:48:30
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:48:30
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:48:30
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:49:20
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:49:20
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:49:20
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:49:20
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:49:20
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:49:20
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 11:51:55
+Dropping temporary table if it exists...
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:51:55
+Dropping temporary table if it exists...
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:51:55
+Dropping temporary table if it exists...
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:51:55
+Dropping temporary table if it exists...
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:51:55
+Dropping temporary table if it exists...
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:51:55
+Dropping temporary table if it exists...
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:53:49
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Successfully appended all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
+Updating existing records in theme_pdk_kommuneplan_oversigt_forslag_v
+Using timestamp from last_download.txt: 2024-10-21 11:53:49
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Successfully appended all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
+Updating existing records in theme_pdk_kommuneplan_oversigt_vedtaget_v
+Using timestamp from last_download.txt: 2024-10-21 11:53:49
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:53:49
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:53:49
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 11:53:49
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 12:07:38
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:07:38
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:07:38
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:07:38
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:07:38
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:07:38
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 12:11:23
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:11:23
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:11:23
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:11:23
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:11:23
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:11:23
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 12:16:25
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:16:25
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:16:25
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:16:25
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:16:25
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:16:25
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 12:20:16
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:20:16
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:20:16
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:20:16
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:20:16
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:20:16
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 12:22:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:22:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:22:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_forslag_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:22:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_lokalplan_vedtaget_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:22:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_samlet_v and loading into temporary table: plandata.tmp
+Using timestamp from last_download.txt: 2024-10-21 12:22:47
+Dropping temporary table if it exists...
+DROP TABLE
+Fetching all records for layer: pdk:theme_pdk_zonekort_v and loading into temporary table: plandata.tmp
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 14:26:47
+Using timestamp from last_download.txt: 2024-10-21 14:26:47
+Using timestamp from last_download.txt: 2024-10-21 14:26:47
+Using timestamp from last_download.txt: 2024-10-21 14:26:47
+Using timestamp from last_download.txt: 2024-10-21 14:26:47
+Using timestamp from last_download.txt: 2024-10-21 14:26:47
+DROP TABLE
+Using timestamp from last_download.txt: 2024-10-21 14:30:12
+Using timestamp from last_download.txt: 2024-10-21 14:30:12
+Using timestamp from last_download.txt: 2024-10-21 14:30:12
+Using timestamp from last_download.txt: 2024-10-21 14:30:12
+Using timestamp from last_download.txt: 2024-10-21 14:30:12
+Using timestamp from last_download.txt: 2024-10-21 14:30:12
+Using timestamp from last_download.txt: 2024-10-21 14:32:19
+Successfully appended all records to the temporary table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
+Successfully updated existing records in theme_pdk_kommuneplan_oversigt_forslag_v
+Using timestamp from last_download.txt: 2024-10-21 14:32:19
+Using timestamp from last_download.txt: 2024-10-21 14:32:19
+Using timestamp from last_download.txt: 2024-10-21 14:32:19
+Using timestamp from last_download.txt: 2024-10-21 14:32:19
+Using timestamp from last_download.txt: 2024-10-21 14:32:19
+Using timestamp from last_download.txt: 2024-10-23 10:35:17
+Using timestamp from last_download.txt: 2024-10-23 10:35:17
+Using timestamp from last_download.txt: 2024-10-23 10:35:17
+Using timestamp from last_download.txt: 2024-10-23 10:35:17
+Using timestamp from last_download.txt: 2024-10-23 10:35:17
+Using timestamp from last_download.txt: 2024-10-23 10:35:17
+Using timestamp from last_download.txt: 2024-10-23 10:36:34
+Using timestamp from last_download.txt: 2024-10-23 10:36:34
+Using timestamp from last_download.txt: 2024-10-23 10:36:34
+Using timestamp from last_download.txt: 2024-10-23 10:36:34
+Using timestamp from last_download.txt: 2024-10-23 10:36:34
+Using timestamp from last_download.txt: 2024-10-23 10:36:34
+Using timestamp from last_download.txt: 2024-10-23 10:57:14
+Using timestamp from last_download.txt: 2024-10-23 10:57:14
+Using timestamp from last_download.txt: 2024-10-23 10:57:14
+Using timestamp from last_download.txt: 2024-10-23 10:57:14
+Using timestamp from last_download.txt: 2024-10-23 10:57:14
+Using timestamp from last_download.txt: 2024-10-23 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 10:57:14
+Using timestamp from last_download.txt: 2024-10-01 11:01:27
+Using timestamp from last_download.txt: 2024-10-01 11:01:27
+Using timestamp from last_download.txt: 2024-10-01 11:01:27
+Using timestamp from last_download.txt: 2024-10-01 11:01:27
+Using timestamp from last_download.txt: 2024-10-01 11:01:27
+Using timestamp from last_download.txt: 2024-10-01 11:01:27
+Using timestamp from last_download.txt: 2024-10-23 11:03:41
+Using timestamp from last_download.txt: 2024-10-23 11:03:41
+Using timestamp from last_download.txt: 2024-10-23 11:03:41
+Using timestamp from last_download.txt: 2024-10-23 11:03:41
+Using timestamp from last_download.txt: 2024-10-23 11:03:41
+Using timestamp from last_download.txt: 2024-10-23 11:03:41
+Using timestamp from last_download.txt: 
+Successfully appended all records to the local theme_pdk_kommuneplan_oversigt_forslag_v table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
+Using timestamp from last_download.txt: 
+Successfully appended all records to the local theme_pdk_kommuneplan_oversigt_vedtaget_v table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
+Using timestamp from last_download.txt: 
+Successfully appended all records to the local theme_pdk_lokalplan_forslag_v table from pdk:theme_pdk_lokalplan_forslag_v
+Using timestamp from last_download.txt: 
+Successfully appended all records to the local theme_pdk_lokalplan_vedtaget_v table from pdk:theme_pdk_lokalplan_vedtaget_v
+Using timestamp from last_download.txt: 
+Successfully appended all records to the local theme_pdk_zonekort_samlet_v table from pdk:theme_pdk_zonekort_samlet_v
+Using timestamp from last_download.txt: 
+Successfully appended all records to the temporary table from pdk:theme_pdk_zonekort_v
+Successfully updated existing records in theme_pdk_zonekort_v
+Using timestamp from last_download.txt: 2024-10-01
+Successfully appended all records to the local theme_pdk_kommuneplan_oversigt_forslag_v table from pdk:theme_pdk_kommuneplan_oversigt_forslag_v
+Using timestamp from last_download.txt: 2024-10-01
+Successfully appended all records to the local theme_pdk_kommuneplan_oversigt_vedtaget_v table from pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v
+Using timestamp from last_download.txt: 2024-10-01
+Successfully appended all records to the local theme_pdk_lokalplan_forslag_v table from pdk:theme_pdk_lokalplan_forslag_v
+Using timestamp from last_download.txt: 2024-10-01
+Successfully appended all records to the local theme_pdk_lokalplan_vedtaget_v table from pdk:theme_pdk_lokalplan_vedtaget_v
+Using timestamp from last_download.txt: 2024-10-01
+Successfully appended all records to the local theme_pdk_zonekort_samlet_v table from pdk:theme_pdk_zonekort_samlet_v
+Using timestamp from last_download.txt: 2024-10-01
+Successfully appended all records to the temporary table from pdk:theme_pdk_zonekort_v
+Successfully updated existing records in theme_pdk_zonekort_v
