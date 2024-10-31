@@ -1,7 +1,7 @@
 #!/bin/bash
 URL="https://geoserver.plandata.dk/geoserver/wfs?servicename=wfs&request=getcapabilities&service=wfs"
 
-SCHEMA=plandata_test
+SCHEMA=plandata
 
 ogr2ogr -f "PostgreSQL" PG:"dbname=crawler"\
  $URL\
@@ -31,7 +31,6 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  -nln theme_pdk_lokalplan_vedtaget_v "pdk:theme_pdk_lokalplan_vedtaget_v"\
- -where "datoopdt < '2023-10-01'" \
  -lco SCHEMA=$SCHEMA\
  -lco OVERWRITE=YES\
  -skipfailures
