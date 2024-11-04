@@ -28,6 +28,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     -nln "$SCHEMA.$LOCAL_LAYER" \
     -where "datoopdt > '$LAST_DOWNLOAD_TIMESTAMP'" \
     -lco SCHEMA=$SCHEMA \
+    -update \
     -append \
     -skipfailures \
     &> ogr2ogr_log.txt
