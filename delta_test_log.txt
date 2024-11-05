@@ -1,0 +1,3 @@
+2024-11-05 13:52:23
+Same number of rows
+No ids missing from delta
