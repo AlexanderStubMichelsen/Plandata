@@ -1,6 +1,7 @@
 #!/bin/bash
+export $(cat .env | xargs)
 
-# Array of script filenames to run
+Array of script filenames to run
 SCRIPTS=("theme_pdk_kommuneplan_oversigt_forslag_v_update.sh"
          "theme_pdk_kommuneplan_oversigt_vedtaget_v_update.sh"
          "theme_pdk_lokalplan_forslag_v_update.sh"
@@ -34,3 +35,5 @@ done
 # After all scripts have run, update the last download timestamp
 echo "$START_TIME" > last_download.txt
 echo "Last download timestamp updated."
+
+psql -U "$PGUSER" -d $PGDATABASE -q -f create_plans_tables.sql 
