@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 
 URL="https://geoserver.plandata.dk/geoserver/wfs?servicename=wfs&request=getcapabilities&service=wfs"
 
@@ -19,7 +21,6 @@ FAILED= false
 
 LOG_FILE=delta_test_log.txt
 
-PGHOST=localhost
 
 
 psql -c "DROP SCHEMA IF EXISTS $SCHEMA CASCADE"
