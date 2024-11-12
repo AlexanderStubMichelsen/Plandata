@@ -1,10 +1,10 @@
 #!/bin/bash
+export $(cat .env | xargs)
 
 # Set the URL for the WFS service
 URL="https://geoserver.plandata.dk/geoserver/wfs?servicename=wfs&request=getcapabilities&service=wfs"
 
-# Schema that is to be updated
-SCHEMA="plandata"
+DELTA_SCHEMA="$SCHEMA"_"$(date +"%Y_%m_%d")"
 
 # Specify the layer you want to update
 SERVER_LAYER="pdk:theme_pdk_zonekort_v"
@@ -32,6 +32,18 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     -append \
     -skipfailures \
     &> ogr2ogr_log.txt
+
+# Also save the delta in a seperate schema
+ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
+    "$URL" "$SERVER_LAYER" \
+    -nln "$DELTA_SCHEMA.$LOCAL_LAYER" \
+    -where "datoopdt > '$LAST_DOWNLOAD_TIMESTAMP'" \
+    -lco SCHEMA=$DELTA_SCHEMA \
+    -update \
+    -append \
+    -skipfailures \
+    &> ogr2ogr_log.txt
+
 
 # Check if the ogr2ogr command was successful
 if [ $? -eq 0 ]; then

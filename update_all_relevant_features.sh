@@ -1,7 +1,7 @@
 #!/bin/bash
 export $(cat .env | xargs)
 
-Array of script filenames to run
+# Array of script filenames to run
 SCRIPTS=("theme_pdk_kommuneplan_oversigt_forslag_v_update.sh"
          "theme_pdk_kommuneplan_oversigt_vedtaget_v_update.sh"
          "theme_pdk_lokalplan_forslag_v_update.sh"
@@ -11,6 +11,9 @@ SCRIPTS=("theme_pdk_kommuneplan_oversigt_forslag_v_update.sh"
 
 # Clear error log at the start of the script
 > error_log.txt
+# Creates the shema for this delta
+
+psql -U "$PGUSER" -d $PGDATABASE -q -c "CREATE SCHEMA $SCHEMA"_"$(date +"%Y_%m_%d")"
 
 # Get the current timestamp before running any scripts
 START_TIME=$(date +"%Y-%m-%d %H:%M:%S")
@@ -35,5 +38,9 @@ done
 # After all scripts have run, update the last download timestamp
 echo "$START_TIME" > last_download.txt
 echo "Last download timestamp updated."
+echo "Last download timestamp updated to $START_TIME." >> "script_output.log"
 
+
+echo "Setting up triggers"
 psql -U "$PGUSER" -d $PGDATABASE -q -f create_plans_tables.sql 
+psql -U "$PGUSER" -d $PGDATABASE -q -f triggers.sql 
