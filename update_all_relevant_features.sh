@@ -44,3 +44,4 @@ echo "Last download timestamp updated to $START_TIME." >> "script_output.log"
 echo "Setting up triggers"
 psql -U "$PGUSER" -d $PGDATABASE -q -f create_plans_tables.sql 
 psql -U "$PGUSER" -d $PGDATABASE -q -f triggers.sql 
+psql -U "$PGUSER" -d $PGDATABASE -q -f remove_old_deltas.sql
