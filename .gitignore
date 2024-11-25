@@ -1,3 +1,5 @@
 .env
 */venv/*
 */last_download.txt
+tmp.sh
+columns.txt
