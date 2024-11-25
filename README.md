@@ -19,3 +19,13 @@
 
 https://gdal.org/en/latest/drivers/vector/pg.html#vector-pg
 
+
+# Log gui
+[gui](flask_app/README.md)
+
+# Tests
+[test folder](tests)
+## Happy paths
+[delta](tests/happy_delta_test.sh)
+## Unhappy paths
+[delta](tests/unhappy_delta_test.sh)
