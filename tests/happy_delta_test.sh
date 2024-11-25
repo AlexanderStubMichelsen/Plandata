@@ -14,8 +14,8 @@ TEST_DATE_5=2021-08-01
 TEST_DATE_END=2021-09-01
 
 SERVER_LAYER="pdk:theme_pdk_kommuneplan_oversigt_vedtaget_v"
-TEST_TABLE=deta_table
-EXPECTED_TABLE=shuld_be_table
+TEST_TABLE=delta_table
+EXPECTED_TABLE=should_be_table
 
 FAILED= false
 
@@ -122,7 +122,7 @@ NEW_IDS_NOT_IN_DELTA=`psql -AXqtc "
 if [ "$COUNT_OF_NEW_IDS_NOT_IN_DELTA" = 0 ]; then
     echo "No ids missing from delta" >> $LOG_FILE
 else
-    echo "Thies ids are not in delta table: $NEW_IDS_NOT_IN_DELTA" >> $LOG_FILE
+    echo "These ids are not in delta table: $NEW_IDS_NOT_IN_DELTA" >> $LOG_FILE
     FAILED= true
 fi
 
