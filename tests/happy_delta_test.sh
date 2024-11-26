@@ -19,7 +19,7 @@ EXPECTED_TABLE=should_be_table
 
 FAILED= false
 
-LOG_FILE=delta_test_log.txt
+LOG_FILE=./happy_delta_test_log.txt
 
 
 
