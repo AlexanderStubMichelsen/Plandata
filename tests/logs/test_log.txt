@@ -1,0 +1,4 @@
+------------------------
+Happy delta test: 2024-11-26 12:16:07
+Same number of rows
+No ids missing from delta

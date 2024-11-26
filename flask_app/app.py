@@ -5,9 +5,10 @@ import os
 app = Flask(__name__)
 
 # Paths to your scripts
-SCRIPT_COMPARE_PATH = os.path.join(os.path.dirname(__file__), '../master_scripts/comparing/compare_all_tables_hash.sh')
-SCRIPT_HASH_PATH = os.path.join(os.path.dirname(__file__), '../master_scripts/hashing/hash_all_tables.sh')
-SCRIPT_UPDATE_PATH = os.path.join(os.path.dirname(__file__), '../master_scripts/update/update_all_relevant_features.sh')
+SCRIPT_COMPARE_PATH             = os.path.join(os.path.dirname(__file__), '../master_scripts/comparing/compare_all_tables_hash.sh')
+SCRIPT_HASH_PATH                = os.path.join(os.path.dirname(__file__), '../master_scripts/hashing/hash_all_tables.sh')
+SCRIPT_UPDATE_PATH              = os.path.join(os.path.dirname(__file__), '../master_scripts/update/update_all_relevant_features.sh')
+SCRIPT_HAPPY_DELTA_TEST_PATH    = os.path.join(os.path.dirname(__file__), '../tests/happy_delta_test.sh')
 
 # Path to the timestamp file
 UPDATE_TIMESTAMP_PATH = os.path.join(
@@ -57,6 +58,11 @@ def run_script_hash():
 def run_script_compare():
     """Execute the compare script."""
     return execute_script(SCRIPT_COMPARE_PATH, 'Compare')
+
+@app.route('/run-script-happy-delta-test', methods=['POST'])
+def run_script_happy_delta_test():
+    """Execute the happy delta test script."""
+    return execute_script(SCRIPT_HAPPY_DELTA_TEST_PATH, 'Happy delta test')
 
 @app.route('/print-log-update', methods=['post'])
 def print_log_update():
@@ -190,7 +196,27 @@ def clear_error_compare():
         return "<h2>Compare Error Cleared</h2>"
     except Exception as e:
         return f"<h2>Error:</h2><pre>{str(e)}</pre>"
+
+@app.route('/print-test-log', methods=['post'])
+def print_test_log():
+    """Print the log for the test script."""
+    try:
+        with open(os.path.join(os.path.dirname(__file__), '../tests/logs/test_log.txt'), 'r') as log_file:
+            return f"<h2>Test log:</h2><pre>{log_file.read()}</pre>"
+    except Exception as e:
+        return f"<h2>Error:</h2><pre>{str(e)}</pre>"
     
+@app.route('/clear-test-log', methods=['post'])
+def clear_test_log():
+    """Clear the log for the test script."""
+    try:
+        with open(os.path.join(os.path.dirname(__file__), '../tests/logs/test_log.txt'), 'w') as log_file:
+            log_file.write('')
+        return "<h2>Test log Cleared</h2>"
+    except Exception as e:
+        return f"<h2>Error:</h2><pre>{str(e)}</pre>"
+
+
 @app.route('/comparing-results', methods=['post'])
 def comparing_results():
     """Combined outputs of the compare results"""

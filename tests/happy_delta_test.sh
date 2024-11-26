@@ -19,14 +19,16 @@ EXPECTED_TABLE=should_be_table
 
 FAILED= false
 
-LOG_FILE=./happy_delta_test_log.txt
+LOG_FILE=./tests/logs/test_log.txt
 
 
 
 psql -c "DROP SCHEMA IF EXISTS $SCHEMA CASCADE"
 psql -c "CREATE SCHEMA $SCHEMA"
 
-echo $(date +"%Y-%m-%d %H:%M:%S") >> $LOG_FILE
+
+echo "------------------------"  >> $LOG_FILE
+echo "Happy delta test:" $(date +"%Y-%m-%d %H:%M:%S") >> $LOG_FILE
 
 
 #Detlas

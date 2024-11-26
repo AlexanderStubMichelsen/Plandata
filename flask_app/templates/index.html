@@ -68,8 +68,9 @@
     <div class="left">
         <div class="header-row">
             <h1>Admin Console</h1>
-            <h2>Update All Tables</h2><span class="timestamp">Last Updated: {{ update_timestamp }}</span>
         </div>
+        <!-- Update tables -->
+        <h2>Update All Tables</h2><span class="timestamp">Last Updated: {{ update_timestamp }}</span>
         <div style="display: flex; gap: 10px;">
             <form action="/run-script-update" method="post" target="output-frame">
                 <button type="submit">Run Update Script</button>
@@ -96,6 +97,7 @@
                 <button type="submit">Clear Ogr2ogr Log</button>
             </form>
         </div>
+        <!-- Hashing -->
         <h2>Hash All Tables</h2>
         <div style="display: flex;gap: 10px;">
             <form action="/run-script-hash" method="post" target="output-frame">
@@ -117,6 +119,7 @@
                 <button type="submit">Clear Error(s)</button>
             </form>
         </div>
+        <!-- Compare Hashes -->
         <h2>Compare All Hash Tables</h2>
         <div style="display: flex; gap: 10px;">
             <form action="/run-script-compare" method="post" target="output-frame">
@@ -141,6 +144,22 @@
         <form action="/comparing-results" , method="post" target="output-frame">
             <button type="submit">View Combined Output</button>
         </form>
+        <!-- tests -->
+        <h2>Tests</h2>
+        <div style="display: flex;gap: 10px;">
+            <form action="/run-script-happy-delta-test" method="post" target="output-frame">
+                <button type="submit">Run Happy delta test Script</button>
+            </form>
+            <form action="/print-test-log" method="post" target="output-frame">
+                <button type="submit">Print Test Log</button>
+            </form>
+        </div>
+        <div style="display: flex; gap: 10px;">
+            <span style="display: inline-block; width: 180px"></span>
+            <form action="/clear-test-log" method="post" target="output-frame">
+                <button type="submit">Clear Test Log</button>
+            </form>
+        </div>
     </div>
 
     <!-- Right side for output -->
