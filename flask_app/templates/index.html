@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,26 +11,37 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: row; /* Arrange children horizontally */
-            height: 100vh; /* Full viewport height */
+            flex-direction: row;
+            /* Arrange children horizontally */
+            height: 100vh;
+            /* Full viewport height */
         }
+
         .left {
-            width: 50%; /* Left side takes 50% of the screen */
+            width: 50%;
+            /* Left side takes 50% of the screen */
             padding: 20px;
-            box-sizing: border-box; /* Include padding in width */
+            box-sizing: border-box;
+            /* Include padding in width */
             background-color: #f4f4f4;
             overflow-y: auto;
         }
+
         .right {
-            width: 50%; /* Right side takes 50% of the screen */
-            height: 100%; /* Full height of the screen */
+            width: 50%;
+            /* Right side takes 50% of the screen */
+            height: 100%;
+            /* Full height of the screen */
             box-sizing: border-box;
         }
+
         .output {
             width: 100%;
             height: 100%;
-            border: none; /* Remove default iframe border */
+            border: none;
+            /* Remove default iframe border */
         }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -40,14 +52,17 @@
             margin-top: 10px;
             width: 180px;
         }
+
         button:hover {
             background-color: #45a049;
         }
+
         h1 {
             color: #333;
         }
     </style>
 </head>
+
 <body>
     <!-- Left side for buttons -->
     <div class="left">
@@ -56,69 +71,72 @@
             <h2>Update All Tables</h2><span class="timestamp">Last Updated: {{ update_timestamp }}</span>
         </div>
         <div style="display: flex; gap: 10px;">
-        <form action="/run-script-update" method="post" target="output-frame">
-            <button type="submit">Run Update Script</button>
-        </form>
-        <form action="/print-log-update" method="post" target="output-frame">
-            <button type="submit">Print Update Log</button>
-        </form>
-        <form action="/print-error-update" method="post" target="output-frame">
-            <button type="submit">Print Update Error(s)</button>
-        </form>
-        <form action="/print-ogr2ogr-update" method="post" target="output-frame">
-            <button type="submit">Print Ogr2ogr Log</button>
-        </form>
+            <form action="/run-script-update" method="post" target="output-frame">
+                <button type="submit">Run Update Script</button>
+            </form>
+            <form action="/print-log-update" method="post" target="output-frame">
+                <button type="submit">Print Update Log</button>
+            </form>
+            <form action="/print-error-update" method="post" target="output-frame">
+                <button type="submit">Print Update Error(s)</button>
+            </form>
+            <form action="/print-ogr2ogr-update" method="post" target="output-frame">
+                <button type="submit">Print Ogr2ogr Log</button>
+            </form>
         </div>
         <div style="display: flex; gap: 10px;">
-        <span style="display: inline-block; width: 180px;"></span><form action="/clear-log-update" method="post" target="output-frame">
-            <button type="submit">Clear Update Log</button>
-        </form>
-        <form action="/clear-error-update" method="post" target="output-frame">
-            <button type="submit">Clear Error(s)</button>
-        </form>
-        <form action="/clear-ogr2ogr-update" method="post" target="output-frame">
-            <button type="submit">Clear Ogr2ogr Log</button>
-        </form>
+            <span style="display: inline-block; width: 180px;"></span>
+            <form action="/clear-log-update" method="post" target="output-frame">
+                <button type="submit">Clear Update Log</button>
+            </form>
+            <form action="/clear-error-update" method="post" target="output-frame">
+                <button type="submit">Clear Error(s)</button>
+            </form>
+            <form action="/clear-ogr2ogr-update" method="post" target="output-frame">
+                <button type="submit">Clear Ogr2ogr Log</button>
+            </form>
         </div>
         <h2>Hash All Tables</h2>
         <div style="display: flex;gap: 10px;">
-        <form action="/run-script-hash" method="post" target="output-frame">
-            <button type="submit">Run Hash Script</button>
-        </form>
-        <form action="/print-log-hash" method="post" target="output-frame">
-            <button type="submit">Print Hash Log</button>
-        </form>
-        <form action="/print-error-hash" method="post" target="output-frame">
-            <button type="submit">Print Hash Error(s)</button>
-        </form>
+            <form action="/run-script-hash" method="post" target="output-frame">
+                <button type="submit">Run Hash Script</button>
+            </form>
+            <form action="/print-log-hash" method="post" target="output-frame">
+                <button type="submit">Print Hash Log</button>
+            </form>
+            <form action="/print-error-hash" method="post" target="output-frame">
+                <button type="submit">Print Hash Error(s)</button>
+            </form>
         </div>
         <div style="display: flex; gap: 10px;">
-        <span style="display: inline-block; width: 180px"></span><form action="/clear-log-hash" method="post" target="output-frame">
-            <button type="submit">Clear Hash Log</button>
-        </form>
-        <form action="/clear-error-hash" method="post" target="output-frame">
-            <button type="submit">Clear Error(s)</button>
-        </form>
+            <span style="display: inline-block; width: 180px"></span>
+            <form action="/clear-log-hash" method="post" target="output-frame">
+                <button type="submit">Clear Hash Log</button>
+            </form>
+            <form action="/clear-error-hash" method="post" target="output-frame">
+                <button type="submit">Clear Error(s)</button>
+            </form>
         </div>
         <h2>Compare All Hash Tables</h2>
         <div style="display: flex; gap: 10px;">
-        <form action="/run-script-compare" method="post" target="output-frame">
-            <button type="submit">Run Compare Script</button>
-        </form>
-        <form action="/print-log-compare" method="post" target="output-frame">
-            <button type="submit">Print Compare Log</button>
-        </form>
-        <form action="/print-error-compare" method="post" target="output-frame">
-            <button type="submit">Print Compare Error(s)</button>
-        </form>
+            <form action="/run-script-compare" method="post" target="output-frame">
+                <button type="submit">Run Compare Script</button>
+            </form>
+            <form action="/print-log-compare" method="post" target="output-frame">
+                <button type="submit">Print Compare Log</button>
+            </form>
+            <form action="/print-error-compare" method="post" target="output-frame">
+                <button type="submit">Print Compare Error(s)</button>
+            </form>
         </div>
         <div style="display: flex; gap: 10px;">
-        <span style="display: inline-block; width: 180px;"></span></span><form action="/clear-log-compare" method="post" target="output-frame">
-            <button type="submit">Clear Compare Log</button>
-        </form>
-        <form action="/clear-error-compare" method="post" target="output-frame">
-            <button type="submit">Clear Error(s)</button>
-        </form>
+            <span style="display: inline-block; width: 180px;"></span></span>
+            <form action="/clear-log-compare" method="post" target="output-frame">
+                <button type="submit">Clear Compare Log</button>
+            </form>
+            <form action="/clear-error-compare" method="post" target="output-frame">
+                <button type="submit">Clear Error(s)</button>
+            </form>
         </div>
         <form action="/comparing-results" , method="post" target="output-frame">
             <button type="submit">View Combined Output</button>
@@ -130,4 +148,5 @@
         <iframe name="output-frame" class="output"></iframe>
     </div>
 </body>
+
 </html>
