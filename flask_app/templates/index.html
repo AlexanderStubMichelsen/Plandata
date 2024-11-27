@@ -160,6 +160,15 @@
                 <button type="submit">Clear Test Log</button>
             </form>
         </div>
+        <!-- address info -->
+        <h2>Adress info</h2>
+        <div style="display: flex;gap: 10px;">
+            <form action="/get-adress-info" method="post" target="output-frame">
+                <input type="json" id="adress" name="adress" value="{{request.form['address']}}">
+                <button type="submit">Find plans for adress</button>
+            </form>
+
+        </div>
     </div>
 
     <!-- Right side for output -->

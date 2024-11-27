@@ -1,6 +1,10 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request # type: ignore
+from dotenv import load_dotenv # type: ignore
+import psycopg2 # type: ignore
 import subprocess
 import os
+
+load_dotenv()
 
 app = Flask(__name__)
 
@@ -243,6 +247,35 @@ def comparing_results():
             combined_output += f"--- {human_readable_name} not found ---\n\n"
             
     return f"<pre>{combined_output}</pre>"
+
+@app.route('/get-adress-info', methods=['post'])
+def adress_info():
+    adress = request.form.get('adress')
+    conn = psycopg2.connect(
+        host=os.getenv("PGHOST"),
+        database=os.getenv("PGDATABASE"),
+        user=os.getenv("PGUSER"),
+        password=os.getenv("PGPASSWORD")
+    )
+    curs = conn.cursor()
+    
+    sql = f"SELECT k.adgangsadressebetegnelse, k.plan_navn, k.dok_link FROM {os.getenv("SCHEMA")}.komuneplan_for_adresse k WHERE " + "k.adgangsadressebetegnelse LIKE %s LIMIT 200"
+    curs.execute(sql,("%" + adress + "%",))
+    komuneplaner = curs.fetchall()
+    sql = f"SELECT l.adgangsadressebetegnelse, l.plan_navn, l.dok_link FROM {os.getenv("SCHEMA")}.lokalplan_for_adresse l WHERE " + "l.adgangsadressebetegnelse LIKE %s LIMIT 200"
+    curs.execute(sql,("%" + adress + "%",))
+    lokalplaner = curs.fetchall()
+
+    curs.close()
+    conn.close()
+    return_string = "<h2>Komuneplaner</h2><br><table><tr><th>Adresse</th><th>Plan navn</th><th>link</th></tr>"
+    for k in komuneplaner:
+        return_string += f"<tr><td>{k[0]}</td><td>{k[1]}</td><td><a href ={k[2]}>link</href></td></tr>"
+    return_string += "</table><br><h2>Lokalplaner</h2><table>"
+    for l in lokalplaner:
+        return_string += f"<tr><td>{l[0]}</td><td>{l[1]}</td><td><a href ={l[2]}>link</href></td></tr>"
+    return_string += "</table>"
+    return return_string
 
 if __name__ == '__main__':
     app.run(debug=True)
