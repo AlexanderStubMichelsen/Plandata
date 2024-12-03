@@ -14,10 +14,14 @@ SCRIPT_HASH_PATH                = os.path.join(os.path.dirname(__file__), '../ma
 SCRIPT_UPDATE_PATH              = os.path.join(os.path.dirname(__file__), '../master_scripts/update/update_all_relevant_features.sh')
 SCRIPT_HAPPY_DELTA_TEST_PATH    = os.path.join(os.path.dirname(__file__), '../tests/happy_delta_test.sh')
 
-# Path to the timestamp file
+# Paths' to timestamp files
 UPDATE_TIMESTAMP_PATH = os.path.join(
     os.path.dirname(__file__), 
     '../master_scripts/update/update_logs_and_error_etc/last_download.txt'
+)
+HASH_TIMESTAMP_PATH = os.path.join(
+    os.path.dirname(__file__), 
+    '../master_scripts/hashing/hash_logs_and_error_etc/last_download_hash.txt'
 )
 
 @app.route('/')
@@ -25,13 +29,21 @@ def index():
     """Render the admin console with the latest timestamp."""
     # Default timestamp
     update_timestamp = "No timestamp found"
+    hash_timestamp = "No timestamp found"
+
     
-    # Try reading the timestamp from the file
+    # Try reading the timestamp for updates
     if os.path.exists(UPDATE_TIMESTAMP_PATH):
         with open(UPDATE_TIMESTAMP_PATH, 'r') as file:
             update_timestamp = file.read().strip()
-    
-    return render_template('index.html', update_timestamp=update_timestamp)
+
+    # Try reading the timestamp for hashing
+    if os.path.exists(HASH_TIMESTAMP_PATH):
+        with open(HASH_TIMESTAMP_PATH, 'r') as file:
+            hash_timestamp = file.read().strip()
+
+    # Pass timestamps to the template
+    return render_template('index.html', update_timestamp=update_timestamp, hash_timestamp=hash_timestamp)
 
 def execute_script(script_path, name):
     """Helper function to execute a script and return the output."""

@@ -11,35 +11,32 @@
             margin: 0;
             padding: 0;
             display: flex;
-            flex-direction: row;
-            /* Arrange children horizontally */
+            flex-wrap: wrap;
+            /* Allows wrapping for smaller screens */
             height: 100vh;
-            /* Full viewport height */
+            box-sizing: border-box;
         }
 
-        .left {
-            width: 50%;
-            /* Left side takes 50% of the screen */
+        .left, .right {
+            flex: 1 1 50%;
+            /* Take up 50% width, shrink or grow as needed */
             padding: 20px;
             box-sizing: border-box;
-            /* Include padding in width */
-            background-color: #f4f4f4;
             overflow-y: auto;
         }
 
+        .left {
+            background-color: #f4f4f4;
+        }
+
         .right {
-            width: 50%;
-            /* Right side takes 50% of the screen */
             height: 100%;
-            /* Full height of the screen */
-            box-sizing: border-box;
         }
 
         .output {
             width: 100%;
             height: 100%;
             border: none;
-            /* Remove default iframe border */
         }
 
         button {
@@ -50,15 +47,41 @@
             border-radius: 5px;
             cursor: pointer;
             margin-top: 10px;
-            width: 180px;
+            width: 100%;
+            max-width: 180px;
         }
 
         button:hover {
             background-color: #45a049;
         }
 
-        h1 {
+        h1, h2 {
             color: #333;
+        }
+
+        .form-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .form-group span {
+            flex-basis: 100%;
+            max-width: 180px;
+        }
+
+        /* Responsive design for smaller screens */
+        @media screen and (max-width: 768px) {
+            .left, .right {
+                flex: 1 1 100%;
+                /* Full width for smaller screens */
+            }
+
+            button {
+                width: 100%;
+                max-width: none;
+            }
         }
     </style>
 </head>
@@ -66,12 +89,10 @@
 <body>
     <!-- Left side for buttons -->
     <div class="left">
-        <div class="header-row">
-            <h1>Admin Console</h1>
-        </div>
-        <!-- Update tables -->
-        <h2>Update All Tables</h2><span class="timestamp">Last Updated: {{ update_timestamp }}</span>
-        <div style="display: flex; gap: 10px;">
+        <h1>Admin Console</h1>
+        <h2>Update All Tables</h2>
+        <span class="timestamp">Last Updated: {{ update_timestamp }}</span>
+        <div class="form-group">
             <form action="/run-script-update" method="post" target="output-frame">
                 <button type="submit">Run Update Script</button>
             </form>
@@ -85,8 +106,7 @@
                 <button type="submit">Print Ogr2ogr Log</button>
             </form>
         </div>
-        <div style="display: flex; gap: 10px;">
-            <span style="display: inline-block; width: 180px;"></span>
+        <div class="form-group">
             <form action="/clear-log-update" method="post" target="output-frame">
                 <button type="submit">Clear Update Log</button>
             </form>
@@ -97,9 +117,9 @@
                 <button type="submit">Clear Ogr2ogr Log</button>
             </form>
         </div>
-        <!-- Hashing -->
         <h2>Hash All Tables</h2>
-        <div style="display: flex;gap: 10px;">
+        <span class="timestamp">Last Hashed: {{ hash_timestamp }}</span>
+        <div class="form-group">
             <form action="/run-script-hash" method="post" target="output-frame">
                 <button type="submit">Run Hash Script</button>
             </form>
@@ -110,8 +130,7 @@
                 <button type="submit">Print Hash Error(s)</button>
             </form>
         </div>
-        <div style="display: flex; gap: 10px;">
-            <span style="display: inline-block; width: 180px"></span>
+        <div class="form-group">
             <form action="/clear-log-hash" method="post" target="output-frame">
                 <button type="submit">Clear Hash Log</button>
             </form>
@@ -119,9 +138,8 @@
                 <button type="submit">Clear Error(s)</button>
             </form>
         </div>
-        <!-- Compare Hashes -->
         <h2>Compare All Hash Tables</h2>
-        <div style="display: flex; gap: 10px;">
+        <div class="form-group">
             <form action="/run-script-compare" method="post" target="output-frame">
                 <button type="submit">Run Compare Script</button>
             </form>
@@ -132,43 +150,24 @@
                 <button type="submit">Print Compare Error(s)</button>
             </form>
         </div>
-        <div style="display: flex; gap: 10px;">
-            <span style="display: inline-block; width: 180px;"></span></span>
+        <div class="form-group">
             <form action="/clear-log-compare" method="post" target="output-frame">
-                <button type="submit">Clear Compare Log</button>
+                <button type="submit">Clear Hash Log</button>
             </form>
             <form action="/clear-error-compare" method="post" target="output-frame">
                 <button type="submit">Clear Error(s)</button>
             </form>
         </div>
-        <form action="/comparing-results" , method="post" target="output-frame">
-            <button type="submit">View Combined Output</button>
+        <div class="form-group">
+            <form action="/comparing-results" method="post" target="output-frame">
+                <button type="submit">Show Compare Results</button>
+            </form>
+        </div>
+        <h2>Address Info</h2>
+        <form action="/get-adress-info" method="post" target="output-frame">
+            <input type="text" id="adress" name="adress" placeholder="Enter address" style="width: 100%; padding: 8px;">
+            <button type="submit">Find plans for address</button>
         </form>
-        <!-- tests -->
-        <h2>Tests</h2>
-        <div style="display: flex;gap: 10px;">
-            <form action="/run-script-happy-delta-test" method="post" target="output-frame">
-                <button type="submit">Run Happy delta test Script</button>
-            </form>
-            <form action="/print-test-log" method="post" target="output-frame">
-                <button type="submit">Print Test Log</button>
-            </form>
-        </div>
-        <div style="display: flex; gap: 10px;">
-            <span style="display: inline-block; width: 180px"></span>
-            <form action="/clear-test-log" method="post" target="output-frame">
-                <button type="submit">Clear Test Log</button>
-            </form>
-        </div>
-        <!-- address info -->
-        <h2>Adress info</h2>
-        <div style="display: flex;gap: 10px;">
-            <form action="/get-adress-info" method="post" target="output-frame">
-                <input type="json" id="adress" name="adress" value="{{request.form['address']}}">
-                <button type="submit">Find plans for adress</button>
-            </form>
-
-        </div>
     </div>
 
     <!-- Right side for output -->
