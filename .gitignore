@@ -3,7 +3,7 @@
 */last_download.txt
 tmp.sh
 columns.txt
-*/update_logs_and_error_etc
-*/hash_logs_and_error_etc
-*/comparing_logs_and_error
+*/update_logs_and_error_etc/*
+*/hash_logs_and_error_etc/*
+*/comparing_logs_and_error/*
 flask_app/error_log.txt
