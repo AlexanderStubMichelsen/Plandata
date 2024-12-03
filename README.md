@@ -20,12 +20,25 @@
 https://gdal.org/en/latest/drivers/vector/pg.html#vector-pg
 
 
-# Log gui
+# Struktur
+## Log gui
+folder med log gui'en
 [gui](flask_app/README.md)
 
-# Tests
+## Master scripts
+folderen med alle top nivo scripts, og logne til disse
+[master_scripts](master_scripts)
+[update schript](master_scripts/update/update_all_relevant_features.sh)
+[hashing schript](master_scripts/hashing/hash_all_tables.sh)
+[comparing schript](master_scripts/comparing/compare_all_tables_hash.sh)
+
+## Hasing and comparing
+
+### comparing
+[comparing](hashing_and_comparing/comparing)
+
+### Hasing
+[hashing](hashing_and_comparing/hashing)
+
+## Tests
 [test folder](tests)
-## Happy paths
-[delta](tests/happy_delta_test.sh)
-## Unhappy paths
-[delta](tests/unhappy_delta_test.sh)
