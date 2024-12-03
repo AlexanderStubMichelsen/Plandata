@@ -6,7 +6,7 @@ BASE_DIR=$(dirname "$(realpath "$0")")
 # Load the environment variables
 export $(cat "$BASE_DIR/../../.env" | xargs)
 
-# Create the table if it doesn't exist
+# Create the hash table if it doesn't exist
 CREATE_TABLE_SQL="
 CREATE TABLE IF NOT EXISTS plandata_hash.theme_pdk_kommune_vedtaget_hashed_values (
     row_hash TEXT NOT NULL

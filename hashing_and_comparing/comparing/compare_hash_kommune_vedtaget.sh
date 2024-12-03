@@ -9,7 +9,7 @@ export $(cat "$BASE_DIR/../../.env" | xargs)
 # Determine the base directory of the script
 BASE_DIR=$(dirname "$(realpath "$0")")
 
-# Define the SQL query
+# Define the SQL query to check if any of the data has been removed or added
 COMPARE_SQL="
 SELECT
     'Removed' AS status, old.row_hash
@@ -28,7 +28,7 @@ ON new.row_hash = old.row_hash
 WHERE old.row_hash IS NULL;
 "
 
-# Run the query
+# Run the query and save the results to a CSV file
 psql -h "$DB_HOST" -d "$DB_NAME" -U "$DB_USER" -c "$COMPARE_SQL" > "$BASE_DIR/../../master_scripts/comparing/comparing_results/comparison_results_kommune_vedtaget.csv"
 
 echo "Comparison results saved to comparison_results.csv"
