@@ -5,7 +5,11 @@ export $(cat ../../.env | xargs)
 # Determine the base directory of the script
 BASE_DIR=$(dirname "$(realpath "$0")")
 
-# Ensure the target schema exists
+# This script moves all the old hashed tables to plandata_hash_old schema.
+# Then it hashes all the plandata tables and stores them in the plandata_hash schema.
+# It is important that update script is run before this script.
+
+# Ensure the target schema plandata_hash_old exists
 CREATE_SCHEMA_SQL="
 CREATE SCHEMA IF NOT EXISTS plandata_hash_old;
 "
@@ -95,6 +99,8 @@ fi
 # Get the current timestamp before running any scripts
 START_TIME=$(date +"%Y-%m-%d %H:%M:%S")
 
+# Now all tables have been renamed and moved, we can run the hashing scripts
+
 # Array of script filenames to run
 SCRIPTS=("$BASE_DIR/../../hashing_and_comparing/hashing/hash_kommune_forslag.sh"
          "$BASE_DIR/../../hashing_and_comparing/hashing/hash_kommune_vedtaget.sh"
@@ -120,7 +126,7 @@ for SCRIPT in "${SCRIPTS[@]}"; do
     fi
 done
 
-# After all scripts have run, update the last download timestamp
+# After all scripts have run, update the last hash download timestamp OBS this is just for information the timestamp is not used!
 echo "$START_TIME" > $BASE_DIR/hash_logs_and_error_etc/last_download_hash.txt
 echo "Last download hash timestamp updated."
 echo "Last download hash timestamp updated to $START_TIME." >> "$BASE_DIR/hash_logs_and_error_etc/hash_script_output.log"

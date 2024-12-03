@@ -4,7 +4,9 @@ BASE_DIR=$(dirname "$(realpath "$0")")
 
 export $(cat $BASE_DIR/../../.env | xargs)
 
-# Array of script filenames to run
+# This script runs all the update scripts for the relevant features
+
+# Array of script filenames to run/ tables to update
 SCRIPTS=("$BASE_DIR/../../update/bash_scripts/theme_pdk_kommuneplan_oversigt_forslag_v_update.sh"
          "$BASE_DIR/../../update/bash_scripts/theme_pdk_kommuneplan_oversigt_vedtaget_v_update.sh"
          "$BASE_DIR/../../update/bash_scripts/theme_pdk_lokalplan_forslag_v_update.sh"

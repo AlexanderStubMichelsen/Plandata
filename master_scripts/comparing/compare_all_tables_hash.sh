@@ -3,7 +3,9 @@
 BASE_DIR=$(dirname "$(realpath "$0")")
 export $(cat "$BASE_DIR/../../.env" | xargs)
 
-# Array of script filenames to run
+# OBS this script compare all the newly updated and hashed tables vs the old hashed tables.
+
+# Array of script filenames to run for comparing the hashed values for each table
 SCRIPTS=("$BASE_DIR/../../hashing_and_comparing/comparing/compare_hash_kommune_forslag.sh"
          "$BASE_DIR/../../hashing_and_comparing/comparing/compare_hash_kommune_vedtaget.sh"
          "$BASE_DIR/../../hashing_and_comparing/comparing/compare_hash_lokal_forslag.sh"
