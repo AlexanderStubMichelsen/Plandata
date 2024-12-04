@@ -40,7 +40,7 @@ def index():
     # Try reading the timestamp for hashing
     if os.path.exists(HASH_TIMESTAMP_PATH):
         with open(HASH_TIMESTAMP_PATH, 'r') as file:
-            hash_timestamp = file.read().strip()
+            hash_timestamp = file.read().strip()   
 
     # Pass timestamps to the template
     return render_template('index.html', update_timestamp=update_timestamp, hash_timestamp=hash_timestamp)
