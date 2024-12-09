@@ -1,4 +1,10 @@
- status | row_hash 
---------+----------
-(0 rows)
+ status |             row_hash             
+--------+----------------------------------
+ Added  | 6ebcfd16bff2a6e6b3603b55e1b397ab
+ Added  | 57380f580b9038ec9961c76bda919956
+ Added  | b1d951b6edcc21f6fd88660adec2b386
+ Added  | 2490fb4ddf0984ffb5fbd166cbd0cba8
+ Added  | e6744ec9dea38d899ec1d654c616abde
+ Added  | ed6a1d6a26c6a3fb228ae2e7435802b3
+(6 rows)
 

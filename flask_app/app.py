@@ -12,7 +12,7 @@ app = Flask(__name__)
 SCRIPT_COMPARE_PATH             = os.path.join(os.path.dirname(__file__), '../master_scripts/comparing/compare_all_tables_hash.sh')
 SCRIPT_HASH_PATH                = os.path.join(os.path.dirname(__file__), '../master_scripts/hashing/hash_all_tables.sh')
 SCRIPT_UPDATE_PATH              = os.path.join(os.path.dirname(__file__), '../master_scripts/update/update_all_relevant_features.sh')
-SCRIPT_HAPPY_DELTA_TEST_PATH    = os.path.join(os.path.dirname(__file__), '../tests/happy_delta_test.sh')
+SCRIPT_DELTA_TEST_PATH    = os.path.join(os.path.dirname(__file__), '../tests/delta_test.sh')
 
 # Paths' to timestamp files
 UPDATE_TIMESTAMP_PATH = os.path.join(
@@ -75,10 +75,10 @@ def run_script_compare():
     """Execute the compare script."""
     return execute_script(SCRIPT_COMPARE_PATH, 'Compare')
 
-@app.route('/run-script-happy-delta-test', methods=['POST'])
-def run_script_happy_delta_test():
+@app.route('/run-script-delta-test', methods=['POST'])
+def run_script_delta_test():
     """Execute the happy delta test script."""
-    return execute_script(SCRIPT_HAPPY_DELTA_TEST_PATH, 'Happy delta test')
+    return execute_script(SCRIPT_DELTA_TEST_PATH, 'Happy delta test')
 
 @app.route('/print-log-update', methods=['post'])
 def print_log_update():

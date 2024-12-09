@@ -1,4 +1,17 @@
- status | row_hash 
---------+----------
-(0 rows)
+ status |             row_hash             
+--------+----------------------------------
+ Added  | a8fb3cbad3c65ec836b7455c24e04294
+ Added  | ec7696da17f65455fdd56bbd04124d5c
+ Added  | c4b13152dff31bfcd29b50959dc50f86
+ Added  | 6ec7fb735d0d7dd55a25ab91b76174f9
+ Added  | eb386dd392af3952b9a13582d467409e
+ Added  | 93b9d49504cdc4c16c187580262b1e9e
+ Added  | 317a22e470450e4e1fbb6108c714d0ea
+ Added  | 9f2cc2f81f7bb394575285218d974ef4
+ Added  | 186127edee0ea33ebbd128964dacdbb9
+ Added  | a8035b8def8c6275fd500c19cb4a519a
+ Added  | 659021fe7fa450bb63340cfb9ea5fd13
+ Added  | c518c91dca504e791a4860ff328cc084
+ Added  | 5ece778f0806ab9f174440fe3e93a8d6
+(13 rows)
 

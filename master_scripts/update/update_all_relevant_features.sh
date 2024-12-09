@@ -13,6 +13,8 @@ SCRIPTS=("$BASE_DIR/../../update/bash_scripts/theme_pdk_kommuneplan_oversigt_for
          "$BASE_DIR/../../update/bash_scripts/theme_pdk_zonekort_samlet_v_update.sh"
          "$BASE_DIR/../../update/bash_scripts/theme_pdk_zonekort_v.sh")
 
+HASFAILED=FALSE
+
 # Clear the error log at the start of the script
 > "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
 
@@ -29,7 +31,7 @@ END \$\$;" 2>> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
 # Check for schema creation errors
 if [ $? -ne 0 ]; then
     echo "Error: Failed to create schema $SCHEMA_NAME." >> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
-    exit 1
+    HASFAILED=TRUE
 fi
 
 # Get the current timestamp
@@ -48,7 +50,7 @@ for SCRIPT in "${SCRIPTS[@]}"; do
     else
         echo "Error: $SCRIPT failed to execute at $START_TIME" >> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
         # Uncomment the next line to stop on first error
-        # exit 1
+        HASFAILED=TRUE
     fi
 done
 
@@ -65,5 +67,9 @@ psql -U "$PGUSER" -d "$PGDATABASE" -q -f "$BASE_DIR/../../update/sql_scripts/rem
 # Check for SQL execution errors
 if [ $? -ne 0 ]; then
     echo "Error: One or more SQL scripts failed to execute." >> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
+    HASFAILED=true
+fi
+
+if $HASFAILED; then 
     exit 1
 fi
