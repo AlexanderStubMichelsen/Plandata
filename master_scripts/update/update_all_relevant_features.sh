@@ -13,7 +13,7 @@ SCRIPTS=("$BASE_DIR/../../update/bash_scripts/theme_pdk_kommuneplan_oversigt_for
          "$BASE_DIR/../../update/bash_scripts/theme_pdk_zonekort_samlet_v_update.sh"
          "$BASE_DIR/../../update/bash_scripts/theme_pdk_zonekort_v.sh")
 
-HASFAILED=FALSE
+HASFAILED=false
 
 # Clear the error log at the start of the script
 > "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
@@ -31,7 +31,7 @@ END \$\$;" 2>> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
 # Check for schema creation errors
 if [ $? -ne 0 ]; then
     echo "Error: Failed to create schema $SCHEMA_NAME." >> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
-    HASFAILED=TRUE
+    HASFAILED=true
 fi
 
 # Get the current timestamp
@@ -50,7 +50,7 @@ for SCRIPT in "${SCRIPTS[@]}"; do
     else
         echo "Error: $SCRIPT failed to execute at $START_TIME" >> "$BASE_DIR/update_logs_and_error_etc/error_log.txt"
         # Uncomment the next line to stop on first error
-        HASFAILED=TRUE
+        HASFAILED=true
     fi
 done
 

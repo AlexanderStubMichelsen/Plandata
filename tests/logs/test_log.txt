@@ -1,4 +1,18 @@
 ------------------------
-Happy delta test: 2024-11-26 12:16:07
+Delta test: 2024-12-12 12:12:38
+Same number of rows
+No ids missing from delta
+------------------------
+Delta test: 2024-12-16 11:57:54
+------------------------
+Delta test: 2024-12-16 11:58:33
+------------------------
+Delta test: 2024-12-16 11:58:35
+------------------------
+Delta test: 2024-12-16 11:58:53
+Different number of rows
+These ids are not in delta table: 
+------------------------
+Delta test: 2024-12-16 11:58:59
 Same number of rows
 No ids missing from delta

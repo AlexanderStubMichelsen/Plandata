@@ -12,7 +12,7 @@ app = Flask(__name__)
 SCRIPT_COMPARE_PATH             = os.path.join(os.path.dirname(__file__), '../master_scripts/comparing/compare_all_tables_hash.sh')
 SCRIPT_HASH_PATH                = os.path.join(os.path.dirname(__file__), '../master_scripts/hashing/hash_all_tables.sh')
 SCRIPT_UPDATE_PATH              = os.path.join(os.path.dirname(__file__), '../master_scripts/update/update_all_relevant_features.sh')
-SCRIPT_DELTA_TEST_PATH    = os.path.join(os.path.dirname(__file__), '../tests/delta_test.sh')
+SCRIPT_DELTA_TEST_PATH          = os.path.join(os.path.dirname(__file__), '../tests/delta_test.sh')
 
 # Paths' to timestamp files
 UPDATE_TIMESTAMP_PATH = os.path.join(
@@ -78,7 +78,7 @@ def run_script_compare():
 @app.route('/run-script-delta-test', methods=['POST'])
 def run_script_delta_test():
     """Execute the happy delta test script."""
-    return execute_script(SCRIPT_DELTA_TEST_PATH, 'Happy delta test')
+    return execute_script(SCRIPT_DELTA_TEST_PATH, 'Delta test')
 
 @app.route('/print-log-update', methods=['post'])
 def print_log_update():
@@ -271,16 +271,16 @@ def adress_info():
     )
     curs = conn.cursor()
     
-    sql = f"SELECT k.adgangsadressebetegnelse, k.plan_navn, k.dok_link FROM {os.getenv("SCHEMA")}.komuneplan_for_adresse k WHERE " + "k.adgangsadressebetegnelse LIKE %s LIMIT 200"
+    sql = f"SELECT k.adgangsadressebetegnelse, k.plan_navn, k.dok_link FROM {os.getenv("SCHEMA")}.komuneplan_for_adresse k WHERE " + "LOWER(k.adgangsadressebetegnelse) LIKE LOWER(%s) LIMIT 200"
     curs.execute(sql,("%" + adress + "%",))
     komuneplaner = curs.fetchall()
-    sql = f"SELECT l.adgangsadressebetegnelse, l.plan_navn, l.dok_link FROM {os.getenv("SCHEMA")}.lokalplan_for_adresse l WHERE " + "l.adgangsadressebetegnelse LIKE %s LIMIT 200"
+    sql = f"SELECT l.adgangsadressebetegnelse, l.plan_navn, l.dok_link FROM {os.getenv("SCHEMA")}.lokalplan_for_adresse l WHERE " + "LOWER(l.adgangsadressebetegnelse) LIKE LOWER(%s) LIMIT 200"
     curs.execute(sql,("%" + adress + "%",))
     lokalplaner = curs.fetchall()
 
     curs.close()
     conn.close()
-    return_string = "<h2>Komuneplaner</h2><br><table><tr><th>Adresse</th><th>Plan navn</th><th>link</th></tr>"
+    return_string = "<h2>Kommuneplaner</h2><br><table><tr><th>Adresse</th><th>Plan navn</th><th>link</th></tr>"
     for k in komuneplaner:
         return_string += f"<tr><td>{k[0]}</td><td>{k[1]}</td><td><a href ={k[2]}>link</href></td></tr>"
     return_string += "</table><br><h2>Lokalplaner</h2><table>"
@@ -290,4 +290,4 @@ def adress_info():
     return return_string
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True,port=5004)
