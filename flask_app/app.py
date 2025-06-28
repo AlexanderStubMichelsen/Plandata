@@ -271,10 +271,11 @@ def adress_info():
     )
     curs = conn.cursor()
     
-    sql = f"SELECT k.adgangsadressebetegnelse, k.plan_navn, k.dok_link FROM {os.getenv("SCHEMA")}.komuneplan_for_adresse k WHERE " + "LOWER(k.adgangsadressebetegnelse) LIKE LOWER(%s) LIMIT 200"
+    schema = os.getenv("SCHEMA")
+    sql = f"SELECT k.adgangsadressebetegnelse, k.plan_navn, k.dok_link FROM {schema}.komuneplan_for_adresse k WHERE " + "LOWER(k.adgangsadressebetegnelse) LIKE LOWER(%s) LIMIT 200"
     curs.execute(sql,("%" + adress + "%",))
     komuneplaner = curs.fetchall()
-    sql = f"SELECT l.adgangsadressebetegnelse, l.plan_navn, l.dok_link FROM {os.getenv("SCHEMA")}.lokalplan_for_adresse l WHERE " + "LOWER(l.adgangsadressebetegnelse) LIKE LOWER(%s) LIMIT 200"
+    sql = f"SELECT l.adgangsadressebetegnelse, l.plan_navn, l.dok_link FROM {schema}.lokalplan_for_adresse l WHERE " + "LOWER(l.adgangsadressebetegnelse) LIKE LOWER(%s) LIMIT 200"
     curs.execute(sql,("%" + adress + "%",))
     lokalplaner = curs.fetchall()
 

@@ -33,7 +33,7 @@ echo "Delta test:" $(date +"%Y-%m-%d %H:%M:%S") >> $LOG_FILE
 #Detlas
 
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler"\
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres"\
     $URL\
     --config OGR_PG_ENABLE_METADATA=NO\
     -nln $TEST_TABLE "$SERVER_LAYER"\
@@ -43,7 +43,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler"\
     -append \
     -skipfailures \
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres" \
     "$URL" "$SERVER_LAYER" \
     -nln $SCHEMA.$TEST_TABLE \
     -where "datoopdt > '$TEST_DATE_1' AND datoopdt <= '$TEST_DATE_2'" \
@@ -52,7 +52,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     -append \
     -skipfailures \
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres" \
     "$URL" "$SERVER_LAYER" \
     -nln $SCHEMA.$TEST_TABLE \
     -where "datoopdt > '$TEST_DATE_2' AND datoopdt <= '$TEST_DATE_3'" \
@@ -61,7 +61,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     -append \
     -skipfailures \
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres" \
     "$URL" "$SERVER_LAYER" \
     -nln $SCHEMA.$TEST_TABLE \
     -where "datoopdt > '$TEST_DATE_3' AND datoopdt <= '$TEST_DATE_4'" \
@@ -70,7 +70,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     -append \
     -skipfailures \
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres" \
     "$URL" "$SERVER_LAYER" \
     -nln $SCHEMA.$TEST_TABLE \
     -where "datoopdt > '$TEST_DATE_4' AND datoopdt <= '$TEST_DATE_5'" \
@@ -79,7 +79,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
     -append \
     -skipfailures \
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres" \
     "$URL" "$SERVER_LAYER" \
     -nln $SCHEMA.$TEST_TABLE \
     -where "datoopdt > '$TEST_DATE_5' AND datoopdt <= '$TEST_DATE_END'" \
@@ -90,7 +90,7 @@ ogr2ogr -f "PostgreSQL" PG:"dbname=crawler" \
 
 #End tables
 
-ogr2ogr -f "PostgreSQL" PG:"dbname=crawler"\
+ogr2ogr -f "PostgreSQL" PG:"dbname=postgres"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  -nln $EXPECTED_TABLE "$SERVER_LAYER"\
