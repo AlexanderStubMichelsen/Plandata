@@ -6,7 +6,7 @@ SCHEMA=plandata
 # Set encoding environment variables
 export PGCLIENTENCODING=UTF8
 
-ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_encoding=UTF8"\
+ogr2ogr -f "PostgreSQL" PG:"host=devdisplay.online dbname=postgres user=postgres client_encoding=UTF8"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  --config PG_USE_COPY=NO\
@@ -15,7 +15,7 @@ ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_
  -lco OVERWRITE=YES\
  -skipfailures
 
-ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_encoding=UTF8"\
+ogr2ogr -f "PostgreSQL" PG:"host=devdisplay.online dbname=postgres user=postgres client_encoding=UTF8"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  --config PG_USE_COPY=NO\
@@ -24,7 +24,7 @@ ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_
  -lco OVERWRITE=YES\
  -skipfailures
 
-ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_encoding=UTF8"\
+ogr2ogr -f "PostgreSQL" PG:"host=devdisplay.online dbname=postgres user=postgres client_encoding=UTF8"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  --config PG_USE_COPY=NO\
@@ -33,7 +33,7 @@ ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_
  -lco OVERWRITE=YES\
  -skipfailures
 
-ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_encoding=UTF8"\
+ogr2ogr -f "PostgreSQL" PG:"host=devdisplay.online dbname=postgres user=postgres client_encoding=UTF8"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  --config PG_USE_COPY=NO\
@@ -42,7 +42,7 @@ ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_
  -lco OVERWRITE=YES\
  -skipfailures
 
-ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_encoding=UTF8"\
+ogr2ogr -f "PostgreSQL" PG:"host=devdisplay.online dbname=postgres user=postgres client_encoding=UTF8"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  --config PG_USE_COPY=NO\
@@ -51,7 +51,7 @@ ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_
  -lco OVERWRITE=YES\
  -skipfailures
 
-ogr2ogr -f "PostgreSQL" PG:"host=localhost dbname=postgres user=postgres client_encoding=UTF8"\
+ogr2ogr -f "PostgreSQL" PG:"host=devdisplay.online dbname=postgres user=postgres client_encoding=UTF8"\
  $URL\
  --config OGR_PG_ENABLE_METADATA=NO\
  --config PG_USE_COPY=NO\
