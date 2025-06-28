@@ -1,6 +1,14 @@
 GO TO FLASK APP ROOT FOLDER
 
-source venv/bin/activate
+#
+
+# Windows (PowerShell/CMD):
+.\.venv\Scripts\Activate.ps1
+# OR for Command Prompt:
+# .\.venv\Scripts\activate.bat
+
+# Linux/Mac (original):
+# source venv/bin/activate
 
 GO TO APP FOLDER
 
